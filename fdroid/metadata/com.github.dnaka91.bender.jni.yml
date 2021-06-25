@@ -1,0 +1,16 @@
+Categories:
+  - Development
+License: GPL-3.0-only
+AuthorName: Dominik Nakamura
+WebSite: https://github.com/dnaka91/bender
+SourceCode: https://github.com/dnaka91/bender
+IssueTracker: https://github.com/dnaka91/bender/issues
+Donate: https://github.com/sponsors/dnaka91
+Liberapay: dnaka91
+
+Name: Bender JNI
+Summary: Comparison of Rust/Android bindings
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersionCode: 2147483647

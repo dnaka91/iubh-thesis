@@ -1,0 +1,15 @@
+[package]
+name = "bend_raw"
+version = "1.0.0"
+authors = ["Dominik Nakamura <dnaka91@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate_type = ["cdylib"]
+
+[dependencies]
+android_logger = { version = "0.10.1", default-features = false }
+bend = { path = "../" }
+chrono = "0.4.19"
+log = { version = "0.4.14", features = ["release_max_level_info"] }
+serde_json = "1.0.64"

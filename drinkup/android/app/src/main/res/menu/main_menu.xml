@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_schedule"
+        android:icon="@drawable/ic_round_schedule_24"
+        android:title="@string/nav_edit_schedule"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_intake_sizes"
+        android:icon="@drawable/ic_round_filter_alt_24"
+        android:title="@string/nav_intake_sizes"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_alarm_test"
+        android:title="@string/menu_drink_alarm_test" />
+    <item
+        android:id="@+id/action_history"
+        android:title="@string/nav_intake_history" />
+
+</menu>

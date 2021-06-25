@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bender</string>
+    <string name="benchmark_empty">Empty</string>
+    <string name="benchmark_hello">Hello</string>
+    <string name="benchmark_mandelbrot">Mandelbrot</string>
+    <string name="benchmark_mandelbrot_manual">Mandelbrot Manual</string>
+    <string name="benchmark_load_person">Load Person</string>
+    <string name="benchmark_save_person">Save Person</string>
+    <string name="benchmark_load_person_json">Load Person JSON</string>
+    <string name="benchmark_save_person_json">Save Person JSON</string>
+    <string name="benchmark_callback">Callback</string>
+    <string name="default_timing">0 ms</string>
+</resources>

@@ -1,0 +1,1 @@
+-keep class com.github.dnaka91.bender.jni.* { *; }

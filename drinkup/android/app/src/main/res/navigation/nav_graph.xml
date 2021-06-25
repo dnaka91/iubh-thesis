@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main_fragment">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.github.dnaka91.drinkup.MainFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_edit_schedule"
+            app:destination="@id/schedule_fragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_show_intake_sizes"
+            app:destination="@id/intake_size_fragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_show_history"
+            app:destination="@id/history_fragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/schedule_fragment"
+        android:name="com.github.dnaka91.drinkup.schedule.ScheduleFragment"
+        android:label="@string/nav_edit_schedule"
+        tools:layout="@layout/schedule_fragment" />
+    <fragment
+        android:id="@+id/intake_size_fragment"
+        android:name="com.github.dnaka91.drinkup.sizes.IntakeSizeFragment"
+        android:label="@string/nav_intake_sizes"
+        tools:layout="@layout/intake_size_fragment">
+        <action
+            android:id="@+id/action_edit_intake_size"
+            app:destination="@id/edit_intake_size_fragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/history_fragment"
+        android:name="com.github.dnaka91.drinkup.history.HistoryFragment"
+        android:label="@string/nav_intake_history"
+        tools:layout="@layout/history_fragment" />
+    <fragment
+        android:id="@+id/edit_intake_size_fragment"
+        android:name="com.github.dnaka91.drinkup.sizes.EditIntakeSizeFragment"
+        android:label="@string/nav_edit_intake_size"
+        tools:layout="@layout/edit_intake_size_fragment">
+        <argument
+            android:name="id"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="name"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="amount"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>

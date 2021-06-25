@@ -1,0 +1,17 @@
+[package]
+name = "bend_jni"
+version = "1.0.0"
+authors = ["Dominik Nakamura <dnaka91@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+android_logger = { version = "0.10.1", default-features = false }
+bend = { path = "../" }
+chrono = "0.4.19"
+jni = { version = "0.19.0", default-features = false }
+log = { version = "0.4.14", features = ["release_max_level_info"] }
+serde_json = "1.0.64"
+thiserror = "1.0.24"

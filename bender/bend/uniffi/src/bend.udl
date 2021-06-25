@@ -1,0 +1,66 @@
+
+[Error]
+enum Error {
+    "Invalid",
+};
+
+namespace bend {
+    void init();
+
+    void empty();
+
+    string hello(string name);
+
+    sequence<u8> mandelbrot(u32 width, u32 height);
+
+    sequence<u8> mandelbrot_manual(u32 width, u32 height);
+
+    [Throws=Error]
+    Person load_person(u64 id);
+
+    [Throws=Error]
+    void save_person(Person person);
+};
+
+dictionary Person {
+    u64 id;
+    Name name;
+    Gender gender;
+    SimpleDate birthday;
+    sequence<Address> addresses;
+    double weight;
+    u64 total_steps;
+};
+
+dictionary Name {
+    string? title;
+    string first;
+    string? middle;
+    string last;
+};
+
+enum Gender {
+    "Female",
+    "Male",
+    "Other",
+};
+
+dictionary Address {
+    string street;
+    string house_number;
+    string city;
+    string country;
+    string postal_code;
+    sequence<string> details;
+};
+
+dictionary SimpleDate {
+    i32 year;
+    u32 month;
+    u32 day;
+};
+
+interface Callback {
+    constructor();
+    void on_complete(i32 result);
+};
