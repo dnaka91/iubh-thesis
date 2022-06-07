@@ -69,7 +69,7 @@ where
         })
     }
 
-    pub fn schedule(&self) -> &Schedule {
+    pub const fn schedule(&self) -> &Schedule {
         &self.schedule
     }
 

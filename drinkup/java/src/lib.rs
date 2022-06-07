@@ -89,7 +89,7 @@ pub extern "system" fn Java_com_github_dnaka91_drinkup_rs_Drinkup_destroy(
         Ok(())
     };
 
-    success_or_throw!(env, run())
+    success_or_throw!(env, run());
 }
 
 #[no_mangle]
@@ -135,7 +135,7 @@ pub extern "system" fn Java_com_github_dnaka91_drinkup_rs_Drinkup_saveScheduleJs
         d.save_schedule(&schedule).map_err(Into::into)
     };
 
-    success_or_throw!(env, run())
+    success_or_throw!(env, run());
 }
 
 #[no_mangle]
@@ -181,7 +181,7 @@ pub extern "system" fn Java_com_github_dnaka91_drinkup_rs_Drinkup_saveIntakeSize
         d.save_intake_size(&intake_size).map_err(Into::into)
     };
 
-    success_or_throw!(env, run())
+    success_or_throw!(env, run());
 }
 
 #[no_mangle]
@@ -229,7 +229,7 @@ pub extern "system" fn Java_com_github_dnaka91_drinkup_rs_Drinkup_addRecordJson(
         d.add_record(&record).map_err(Into::into)
     };
 
-    success_or_throw!(env, run())
+    success_or_throw!(env, run());
 }
 
 #[no_mangle]
